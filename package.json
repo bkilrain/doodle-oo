@@ -1,0 +1,19 @@
+{
+  "name": "doodle-oo",
+  "version": "1.0.0",
+  "description": "Doodle webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkilrain/doodle-oo.git"
+  },
+  "author": "Brian Kilrain <bkilrain@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkilrain/doodle-oo/issues"
+  },
+  "homepage": "https://github.com/bkilrain/doodle-oo#readme"
+}
