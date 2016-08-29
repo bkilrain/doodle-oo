@@ -1,0 +1,22 @@
+{
+  "name": "doodle-oo",
+  "description": "Doodle webapp",
+  "main": "index.js",
+  "authors": [
+    "Brian Kilrain <bkilrain@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bkilrain/doodle-oo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}

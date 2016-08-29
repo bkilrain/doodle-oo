@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/bkilrain/doodle-oo/issues"
   },
-  "homepage": "https://github.com/bkilrain/doodle-oo#readme"
+  "homepage": "https://github.com/bkilrain/doodle-oo#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.9",
+  }
 }
