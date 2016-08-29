@@ -1,15 +1,7 @@
-angular.module('doodle.draw', [])
+angular.module('doodle.draw', [
+  'doodle.services'
+  ])
 
-.controller('drawController', function($scope) {
-  var canvas = new fabric.Canvas('canvas');
-
-  var rect = new fabric.Rect({
-    left: 100,
-    top: 100,
-    fill: 'red',
-    width: 20,
-    height: 20
-  });
-
-  canvas.add(rect);
+.controller('drawController', function($scope, setupCanvas) {
+  setupCanvas();
 })
