@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="doodle-oo">
   <head>
     <meta charset="utf-8">
     <title>Doodle-oo</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <p>Hello, I'm Doodle-oo</p>
+    <h1>Doodle-oo!</h1>
+
+    <div ui-view></div>
+
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="/app/app.js"></script>
     
   </body>
 </html>
