@@ -1,5 +1,6 @@
-angular.module('doodle-oo' [
-  'ui-router'  
+angular.module('doodle', [
+  'doodle.draw',
+  'ui.router'  
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/draw');
@@ -7,7 +8,7 @@ angular.module('doodle-oo' [
   $stateProvider
     .state('draw', {
       url: '/draw',
-      templateUrl: 'public/draw/draw.html',
+      templateUrl: 'views/draw.html',
       controller: 'drawController'
     })
 })

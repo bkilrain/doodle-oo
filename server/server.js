@@ -6,10 +6,6 @@ mongoose.connect('mongodb://localhost/doodle-oo')
 
 app.use(express.static('public'));
 
-app.get('/draw', function(req, res) {
-  res.sendfile()
-})
-
 app.listen(3000, function() {
   console.log("listening on port 3000!");
 })
