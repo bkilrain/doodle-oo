@@ -7,6 +7,8 @@ angular.module('doodle.draw', [
   $scope.color = "#005E7A"
   $scope.canvas.freeDrawingBrush.color = $scope.color;
   $scope.url;
+  $scope.width = 4;
+  $scope.canvas.freeDrawingBrush.width = $scope.width;
   $scope.saveCanvas = function() {
     Canvases.addCanvas(JSON.stringify($scope.canvas.toJSON()))
       .then(function(data) {
@@ -21,6 +23,8 @@ angular.module('doodle.draw', [
   $scope.changeColor = function() {
     $scope.canvas.freeDrawingBrush.color = $scope.color;
   }
-
+  $scope.changeWidth = function() {
+    $scope.canvas.freeDrawingBrush.width = $scope.width;
+  }
   
 })

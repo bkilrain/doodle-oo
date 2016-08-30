@@ -6,7 +6,9 @@
   </div>
   <form>
     <label for="drawing-color">Choose a Color:</label>
-    <input ng-change="changeColor()" ng-model="color" type="color" id="drawing-color">
+    <input ng-change="changeColor()" ng-model="color" type="color" id="drawing-color" /></br>
+    <label for="width">Brush Width:</label>
+    <input ng-change="changeWidth()" ng-model="width" type="range" id="width" min="0" max="10" />
   </form>
   <a ng-href="{{ url }}" ng-if="url">Your personal doodle URL is: {{ url }}</a>
 </div>
