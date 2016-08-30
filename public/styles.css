@@ -1,9 +1,58 @@
-h1{
-  color: red;
+html{
+  background-color: #151515;
+}
+body {
+  background: repeating-linear-gradient(
+  -55deg,
+  #222,
+  #222 10px,
+  #333 10px,
+  #333 20px
+  );  
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 0;
+
+}
+.header{
+  padding-bottom: 10px;
+  background-color: rgba(0,0,0,0.2);
+}
+#title{
+  color: #E71D36;
+  font-family: 'Lobster', cursive;
+  font-size: 66px;
+  text-decoration: underline;
+  padding-left: 30px
 }
 .frame{
   width: 500px;
   height: 500px;
   margin: auto;
-  border: solid black 1px;
+  border: 15px solid #011627;
+  border-radius: 20px
+}
+#canvas{
+  background-color: white;
+  text-align: center;
+  border-radius: 4px;
+}
+button{
+  background-color: #2EC4B6;
+}
+.controls{
+  padding: 8px 0px 20px 20px;
+  background-color: rgba(256,256,256,0.3)
+}
+.savedUrl{
+  position: absolute;
+  top: 150px;
+  background-color: bisque;
+  border-radius: 3px;
+}
+.savedUrl #url{
+  text-decoration: none;
+  padding: 4px;
+  color: #E71D36;
 }

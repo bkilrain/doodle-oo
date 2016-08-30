@@ -6,7 +6,6 @@ angular.module('doodle.services', [
   return function(id, drawMode) {
     return new fabric.Canvas(id, {
       isDrawingMode: drawMode,
-      containerClass: 'frame',
       width: 500,
       height: 500
     });

@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <title>Doodle-oo</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   </head>
   <body>
-    <h1>Doodle-oo!</h1>
+    <div class="header">
+      <h1 id="title">Doodle-oo!</h1>
+    </div>
 
     <div ui-view></div>
 
     <script src="bower_components/fabric.js/dist/fabric.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    
+
     <script src="services/services.js"></script>
     <script src="controllers/saved.js"></script>
     <script src="controllers/draw.js"></script>

@@ -12,7 +12,7 @@ angular.module('doodle.draw', [
   $scope.saveCanvas = function() {
     Canvases.addCanvas(JSON.stringify($scope.canvas.toJSON()))
       .then(function(data) {
-        $scope.url = 'http://45.55.27.86:3000/#/saved/' + data.data;
+        $scope.url = 'http://localhost:3000/#/saved/' + data.data;
         console.log($scope.url)
       });
   };
