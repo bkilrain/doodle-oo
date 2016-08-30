@@ -8,7 +8,6 @@ var findCanvases = Q.nbind(Canvas.find, Canvas);
 
 module.exports = {
   saveCanvas: function(req, res, next) {
-    // console.log(req.body);
     var json = req.body;
     var savedId;
 
@@ -16,9 +15,6 @@ module.exports = {
       .then(function(saved) {
         savedId = saved._id;
         res.send(savedId);
-      })
-      .then(function() {
-
       });
     
   }

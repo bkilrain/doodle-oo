@@ -8,11 +8,9 @@ angular.module('doodle.draw', [
   $scope.saveCanvas = function() {
     canvases.addCanvas(JSON.stringify($scope.canvas))
       .then(function(data) {
-        $scope.url = 'http://localhost:3000' + data.data;
+        $scope.url = 'http://localhost:3000/saved/' + data.data;
         console.log($scope.url)
       });
   };
-  // var showUrl = function(url) {
-
-  // }
+  
 })

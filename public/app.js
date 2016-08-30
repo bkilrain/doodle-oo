@@ -12,4 +12,9 @@ angular.module('doodle', [
       templateUrl: 'views/draw.html',
       controller: 'drawController'
     })
+    .state('saved', {
+      url: '/saved/*',
+      templateUrl: 'views/saved.html',
+      controller: 'savedController'
+    });
 })
