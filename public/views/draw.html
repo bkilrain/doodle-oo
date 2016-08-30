@@ -4,5 +4,9 @@
   <div class="frame">
     <canvas id="canvas" />
   </div>
+  <form>
+    <label for="drawing-color">Choose a Color:</label>
+    <input ng-change="changeColor()" ng-model="color" type="color" id="drawing-color">
+  </form>
   <a ng-href="{{ url }}" ng-if="url">Your personal doodle URL is: {{ url }}</a>
 </div>

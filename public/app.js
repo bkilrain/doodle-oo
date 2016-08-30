@@ -2,7 +2,7 @@ angular.module('doodle', [
   'doodle.draw',
   'doodle.saved',
   'doodle.services',
-  'ui.router'  
+  'ui.router'
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/draw');
