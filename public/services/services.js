@@ -12,3 +12,18 @@ angular.module('doodle.services', [
     });
   };
 })
+
+.factory('canvases', function($http) {
+  return {
+    addCanvas: function(json) {
+      return $http({
+        method: 'POST',
+        url: ,
+        data: json
+      })
+      .then(function(res) {
+        return res;
+      })
+    }
+  }
+})
