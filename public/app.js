@@ -18,9 +18,9 @@ angular.module('doodle', [
       templateUrl: 'views/saved.html',
       controller: 'savedController',
       resolve: {
-        canvas: ['$stateParams', function($stateParams, canvases) {
+        canvas: ['$stateParams', 'Canvases', function($stateParams, Canvases) {
           console.log('here', $stateParams.id)
-          return canvases.getCanvas($stateParams.id);
+          return Canvases.getCanvas($stateParams.id);
         }]
       }
     });
