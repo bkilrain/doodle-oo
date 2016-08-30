@@ -13,6 +13,6 @@ module.exports = {
         } else {
           console.log("doodle not found")
         }
-      })
-  }
+      });
+  };
 }
