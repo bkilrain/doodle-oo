@@ -2,7 +2,7 @@ angular.module('doodle.draw', [
   'doodle.services'
   ])
 
-.controller('drawController', function($scope, setupCanvas, Canvases) {
+.controller('drawController', function($state, $scope, setupCanvas, Canvases) {
   $scope.canvas = setupCanvas(canvas, true);
   $scope.url;
   $scope.saveCanvas = function() {
@@ -12,5 +12,8 @@ angular.module('doodle.draw', [
         console.log($scope.url)
       });
   };
+  $scope.freshen = function() {
+    $state.reload();
+};
   
 })

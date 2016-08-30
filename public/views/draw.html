@@ -1,6 +1,8 @@
-<div class="frame">
-  <!-- <div ng-if="show" ng-include src="url.html"></ng-include> -->
-  <p ng-click="saveCanvas()">save</p>
-  <canvas id="canvas" />
-  <p ng-if="url">Your personal doodle URL is: {{ url }}</p>
+<div>
+  <button ng-click="freshen()">Freshen!</button>
+  <button ng-click="saveCanvas()">Save</button>
+  <div class="frame">
+    <canvas id="canvas" />
+  </div>
+  <a ng-href="{{ url }}" ng-if="url">Your personal doodle URL is: {{ url }}</a>
 </div>
