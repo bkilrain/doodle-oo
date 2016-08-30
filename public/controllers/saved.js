@@ -4,7 +4,9 @@ angular.module('doodle.saved', [
 
 .controller('savedController', function($scope, setupCanvas, canvas) {
   var showCanvas = setupCanvas(saved, false);
-  console.log(JSON.stringify(canvas));
-  showCanvas.loadFromJSON(JSON.stringify(canvas));
+  console.log(showCanvas);
+  showCanvas.loadFromJSON(JSON.stringify(canvas), showCanvas.renderAll.bind(showCanvas), function(o, object) {
+      object.set('selectable', false);
+  });
   $scope.canvas = showCanvas;
 })
