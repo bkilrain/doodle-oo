@@ -1,3 +1,9 @@
 h1{
   color: red;
 }
+.frame{
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border: solid black 1px;
+}

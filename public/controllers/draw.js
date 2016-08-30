@@ -3,5 +3,8 @@ angular.module('doodle.draw', [
   ])
 
 .controller('drawController', function($scope, setupCanvas) {
-  setupCanvas();
+  $scope.canvas = setupCanvas();
+  $scope.saveCanvas = function() {
+    console.log(JSON.stringify($scope.canvas));
+  };
 })
