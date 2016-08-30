@@ -3,8 +3,8 @@ angular.module('doodle.services', [
   ])
 
 .factory('setupCanvas', function() {
-  return function() {
-    return new fabric.Canvas('canvas', {
+  return function(id) {
+    return new fabric.Canvas(id, {
       isDrawingMode: true,
       containerClass: 'frame',
       width: 500,
@@ -27,6 +27,15 @@ angular.module('doodle.services', [
         console.log(res);
         return res;
       });
+    },
+    getCanvas: function(id) {
+      console.log(id)
+      return $http({
+        method: 'GET',
+        url: 'saved/' + id,
+      }).then(function(res) {
+        console.log(res.file)
+      })
     }
   };
 })

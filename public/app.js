@@ -1,5 +1,6 @@
 angular.module('doodle', [
   'doodle.draw',
+  'doodle.saved',
   'doodle.services',
   'ui.router'  
 ])
@@ -13,8 +14,14 @@ angular.module('doodle', [
       controller: 'drawController'
     })
     .state('saved', {
-      url: '/saved/*',
+      url: '/saved/:id',
       templateUrl: 'views/saved.html',
-      controller: 'savedController'
+      controller: 'savedController',
+      resolve: {
+        canvas: ['$stateParams', function($stateParams, canvases) {
+          console.log('here', $stateParams.id)
+          return canvases.getCanvas($stateParams.id);
+        }]
+      }
     });
 })

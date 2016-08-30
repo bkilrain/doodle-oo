@@ -3,12 +3,12 @@ angular.module('doodle.draw', [
   ])
 
 .controller('drawController', function($scope, setupCanvas, canvases) {
-  $scope.canvas = setupCanvas();
+  $scope.canvas = setupCanvas(canvas);
   $scope.url;
   $scope.saveCanvas = function() {
     canvases.addCanvas(JSON.stringify($scope.canvas))
       .then(function(data) {
-        $scope.url = 'http://localhost:3000/saved/' + data.data;
+        $scope.url = 'http://localhost:3000/#/saved/' + data.data;
         console.log($scope.url)
       });
   };
