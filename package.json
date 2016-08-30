@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/bkilrain/doodle-oo#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mongodb": "^2.2.9",
-    "mongoose": "^4.5.10"
+    "mongoose": "^4.5.10",
+    "q": "^1.4.1"
   }
 }

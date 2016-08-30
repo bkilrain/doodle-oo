@@ -1,8 +1,7 @@
+// var drawController = require('../controllers/drawController.js');
 
-module.exports = function (app, express) {
+// module.exports = function (app, express) {
 
-  app.post('/api/canvases', function(json) {
-    
-  })
+//   app.post('/api/canvases', drawController.saveCanvas);
 
-};
+// };

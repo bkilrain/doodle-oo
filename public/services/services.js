@@ -16,14 +16,17 @@ angular.module('doodle.services', [
 .factory('canvases', function($http) {
   return {
     addCanvas: function(json) {
+      console.log(typeof json, 'on addCanvas!!!!!')
       return $http({
         method: 'POST',
-        url: ,
+        url: '/api/canvases',
         data: json
       })
       .then(function(res) {
+
+        console.log(res);
         return res;
-      })
+      });
     }
-  }
+  };
 })
