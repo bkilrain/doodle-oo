@@ -7,7 +7,7 @@ var app = express();
 
 /************ Database ****************/
 
-mongoose.connect('mongodb://localhost/doodle');
+mongoose.connect('mongodb://45.55.27.86/doodle');
 
 var db = mongoose.connection;
 
