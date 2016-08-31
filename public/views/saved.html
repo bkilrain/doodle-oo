@@ -1,6 +1,9 @@
 <div>
-  <button><a ui-sref="draw" class="draw">Draw!</a></button>
   <div class="frame">
     <canvas id="saved" />
+  </div>
+  <div class="controls">
+    <button><a ui-sref="draw" class="draw">Draw!</a></button>
+    <a class="twitter-share-button" ng-href="{{ tweetUrl }}">Tweet!</a>
   </div>
 </div>

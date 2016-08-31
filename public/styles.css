@@ -33,7 +33,7 @@ body {
   border: 15px solid #011627;
   border-radius: 20px
 }
-#canvas{
+#canvas, #saved{
   background-color: white;
   text-align: center;
   border-radius: 4px;
